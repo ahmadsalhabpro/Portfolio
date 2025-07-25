@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="أحمد صلحاب - مطور ويب ومختص دعم تقني">
+    <meta name="keywords" content="مطور ويب, Python, دعم تقني, تصميم">
+    <title>أحمد صلحاب - مطور ويب ومختص دعم تقني</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="assets/css/style.css" as="style">
+    <link rel="preload" href="assets/js/main.js" as="script">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Animate on Scroll Library -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    </head>
+    
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>أحمد صلحاب</h2>
+                </div>
+                
+                <!-- Visitor Counter -->
+                <div class="visitor-counter">
+                    <i class="fas fa-eye"></i>
+                    <span id="visitor-count">0</span>
+                    <span>زائر</span>
+                </div>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home" class="nav-link">الرئيسية</a></li>
+                    <li><a href="#about" class="nav-link">نبذة عني</a></li>
+                    <li><a href="#services" class="nav-link">خدماتي</a></li>
+                    <li><a href="#portfolio" class="nav-link">أعمالي</a></li>
+                    <li><a href="#skills" class="nav-link">مهاراتي</a></li>
+                    <li><a href="#education" class="nav-link">التعليم</a></li>
+                    <li><a href="#languages" class="nav-link">اللغات</a></li>
+                    <li><a href="#certificates" class="nav-link">الشهادات</a></li>
+                    <li><a href="#contact" class="nav-link">تواصل معي</a></li>
+                </ul>
+                
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" data-aos="fade-up" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">أحمد صلحاب</h1>
+                <p class="hero-subtitle">مختص دعم تقني @ جامعة البعث | مطور Python | مبدع Canva</p>
+                
+                <div class="hero-social">
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="https://www.facebook.com/tech.hand.as" class="social-link"><i class="fab fa-facebook"></i></a>
+                </div>
+                
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">شاهد أعمالي</a>
+                    <a href="#contact" class="btn btn-secondary">تواصل معي</a>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <div class="image-placeholder">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" data-aos="fade-up" class="about">
+        <div class="container">
+            <h2 class="section-title">نبذة عني</h2>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p>أنا أحمد صلحاب، مطور ويب شغوف بخبرة واسعة في تحويل التحديات إلى حلول مبتكرة. أؤمن بقوة التصميم الجيد والكود النظيف والمحتوى الهادف لتحقيق نتائج ملموسة.</p>
+                    
+                    <p>أسعى دائماً لتعلم أحدث التقنيات وتطبيق أفضل الممارسات في عملي، مع التركيز على تقديم قيمة حقيقية للعملاء والمستخدمين.</p>
+                    
+                    <div class="core-values">
+                        <h3>القيم الأساسية:</h3>
+                        <ul>
+                            <li><i class="fas fa-lightbulb"></i> الابتكار</li>
+                            <li><i class="fas fa-star"></i> الجودة</li>
+                            <li><i class="fas fa-handshake"></i> التعاون</li>
+                            <li><i class="fas fa-eye"></i> الشفافية</li>
+                            <li><i class="fas fa-heart"></i> الالتزام</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="cv-buttons">
+                        <button class="btn btn-outline" onclick="window.print()">
+                            <i class="fas fa-print"></i> طباعة السيرة الذاتية
+                        </button>
+                        <a href="cv/ahmad-salhab-cv.pdf" class="btn btn-primary" download>
+                            <i class="fas fa-download"></i> تحميل السيرة الذاتية
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" data-aos="fade-up" class="services">
+        <div class="container">
+            <h2 class="section-title">خدماتي</h2>
+            
+            <div class="services-grid">
+                <!-- Frontend Development -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>تطوير الواجهات الأمامية</h3>
+                    <p>بناء واجهات مستخدم تفاعلية ومتجاوبة باستخدام أحدث التقنيات مثل React و Vue.</p>
+                    <div class="service-price">ابتداءً من \$50</div>
+                    <a href="https://khamsat.com/user/zakria_naser/services" class="btn btn-sm">عرض الخدمة</a>
+                </div>
+
+                <!-- UX/UI Design -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>تصميم UX/UI</h3>
+                    <p>تصميم تجارب مستخدم بديهية وجذابة بصرياً تركز على تحقيق الأهداف التجارية.</p>
+                    <div class="service-price">ابتداءً من \$75</div>
+                    <a href="https://mostaql.com/u/Zakria_Naser" class="btn btn-sm">عرض الخدمة</a>
+                </div>
+
+                <!-- WordPress Development -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fab fa-wordpress"></i>
+                    </div>
+                    <h3>تطوير WordPress</h3>
+                    <p>إنشاء وتخصيص مواقع WordPress قوية وسهلة الإدارة للشركات والأفراد.</p>
+                    <div class="service-price">ابتداءً من \$100</div>
+                    <a href="https://www.facebook.com/tech.hand.as" class="btn btn-sm">عرض الخدمة</a>
+                </div>
+
+                <!-- Python Development -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>تطوير Python</h3>
+                    <p>تطوير تطبيقات وسكريبتات Python لأتمتة المهام وتحليل البيانات.</p>
+                    <div class="service-price">ابتداءً من \$60</div>
+                    <a href="https://khamsat.com/user/zakria_naser/services" class="btn btn-sm">عرض الخدمة</a>
+                </div>
+
+                <!-- Technical Support -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>الدعم التقني</h3>
+                    <p>تقديم الدعم التقني المتخصص وحل المشاكل التقنية للأنظمة والتطبيقات.</p>
+                    <div class="service-price">ابتداءً من \$25</div>
+                    <a href="https://mostaql.com/u/Zakria_Naser" class="btn btn-sm">عرض الخدمة</a>
+                </div>
+
+                <!-- Canva Design -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>تصميم Canva</h3>
+                    <p>إنشاء تصاميم إبداعية ومهنية للوسائل الاجتماعية والمواد التسويقية.</p>
+                    <div class="service-price">ابتداءً من \$15</div>
+                    <a href="https://www.facebook.com/tech.hand.as" class="btn btn-sm">عرض الخدمة</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" data-aos="fade-up" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">أعمالي السابقة</h2>
+            
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">الكل</button>
+                <button class="filter-btn" data-filter="web">تطوير ويب</button>
+                <button class="filter-btn" data-filter="design">تصميم</button>
+                <button class="filter-btn" data-filter="python">Python</button>
+            </div>
+            
+            <div class="portfolio-grid" id="portfolio-grid">
+                <!-- Portfolio items will be loaded dynamically -->
+            </div>
+            
+            <div class="portfolio-load-more">
+                <button class="btn btn-primary" id="load-more">عرض المزيد</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" data-aos="fade-up" class="skills">
+        <div class="container">
+            <h2 class="section-title">مهاراتي وخبراتي</h2>
+            
+            <div class="skills-grid">
+                <!-- Technical Skills -->
+                <div class="skills-category">
+                    <h3><i class="fas fa-code"></i> المهارات التقنية</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span>HTML5</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>CSS3 (Tailwind, Bootstrap)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>JavaScript (ES6+)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>React / Vue.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Node.js / Express</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skills-category">
+                    <h3><i class="fas fa-tools"></i> الأدوات</h3>
+                    <div class="tools-grid">
+                        <div class="tool-item">
+                            <i class="fas fa-code"></i>
+                            <span>VS Code</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fab fa-figma"></i>
+                            <span>Figma</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git & GitHub</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fab fa-docker"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-database"></i>
+                            <span>Postman</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-tasks"></i>
+                            <span>Jira / Trello</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Personal Skills -->
+                <div class="skills-category">
+                    <h3><i class="fas fa-user"></i> المهارات الشخصية</h3>
+                    <div class="personal-skills">
+                        <div class="personal-skill">
+                            <i class="fas fa-comments"></i>
+                            <span>التواصل الفعال</span>
+                        </div>
+                        <div class="personal-skill">
+                            <i class="fas fa-puzzle-piece"></i>
+                            <span>حل المشكلات</span>
+                        </div>
+                        <div class="personal-skill">
+                            <i class="fas fa-users"></i>
+                            <span>العمل الجماعي</span>
+                        </div>
+                        <div class="personal-skill">
+                            <i class="fas fa-clock"></i>
+                            <span>إدارة الوقت</span>
+                        </div>
+                        <div class="personal-skill">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>التعلم المستمر</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" data-aos="fade-up" class="education">
+        <div class="container">
+            <h2 class="section-title">التعليم</h2>
+            
+            <div class="education-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>بكالوريوس في علوم الحاسوب</h3>
+                        <h4>جامعة البعث</h4>
+                        <span class="timeline-date">2020 - 2024</span>
+                        <p>تخصص في تطوير البرمجيات وأنظمة المعلومات مع التركيز على تقنيات الويب الحديثة.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>دبلوم في الدعم التقني</h3>
+                        <h4>معهد التقنيات المتقدمة</h4>
+                        <span class="timeline-date">2019 - 2020</span>
+                        <p>دراسة متخصصة في صيانة الأنظمة والشبكات وحل المشاكل التقنية.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages Section -->
+    <section id="languages" data-aos="fade-up" class="languages">
+        <div class="container">
+            <h2 class="section-title">اللغات</h2>
+            
+            <div class="languages-grid">
+                <div class="language-card">
+                    <div class="language-flag">🇸🇾</div>
+                    <h3>العربية</h3>
+                    <p>اللغة الأم</p>
+                    <div class="language-level">
+                        <div class="level-bar">
+                            <div class="level-progress" style="width: 100%"></div>
+                        </div>
+                        <span>متحدث أصلي</span>
+                    </div>
+                </div>
+                
+                <div class="language-card">
+                    <div class="language-flag">🇺🇸</div>
+                    <h3>الإنجليزية</h3>
+                    <p>لغة ثانية</p>
+                    <div class="language-level">
+                        <div class="level-bar">
+                            <div class="level-progress" style="width: 85%"></div>
+                        </div>
+                        <span>متقدم / مهني</span>
+                    </div>
+                </div>
+                
+                <div class="language-card">
+                    <div class="language-flag">🇫🇷</div>
+                    <h3>الفرنسية</h3>
+                    <p>لغة إضافية</p>
+                    <div class="language-level">
+                        <div class="level-bar">
+                            <div class="level-progress" style="width: 45%"></div>
+                        </div>
+                        <span>متوسط</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" data-aos="fade-up" class="certificates">
+        <div class="container">
+            <h2 class="section-title">الشهادات والدورات</h2>
+            
+            <div class="certificates-grid">
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="certificate-content">
+                        <h3>شهادة تطوير واجهات المستخدم المتقدمة</h3>
+                        <p class="certificate-institution">المؤسسة: Udemy</p>
+                        <p class="certificate-date">تاريخ الحصول: مارس 2024</p>
+                        <a href="#" class="btn btn-sm">عرض الشهادة</a>
+                    </div>
+                </div>
+                
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="certificate-content">
+                        <h3>دورة تصميم تجربة المستخدم (UX)</h3>
+                        <p class="certificate-institution">المؤسسة: Google</p>
+                        <p class="certificate-date">تاريخ الحصول: يناير 2024</p>
+                        <a href="#" class="btn btn-sm">عرض الشهادة</a>
+                    </div>
+                </div>
+                
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="certificate-content">
+                        <h3>شهادة Python للمطورين</h3>
+                        <p class="certificate-institution">المؤسسة: Coursera</p>
+                        <p class="certificate-date">تاريخ الحصول: ديسمبر 2023</p>
+                        <a href="#" class="btn btn-sm">عرض الشهادة</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" data-aos="fade-up" class="contact">
+        <div class="container">
+            <h2 class="section-title">تواصل معي</h2>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>معلومات التواصل</h3>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>البريد الإلكتروني</h4>
+                            <p>a7mdsalhab9@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>رقم الهاتف</h4>
+                            <p>+963 940-630-928</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <h4>تابعني على</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                            <a href="https://www.facebook.com/tech.hand.as" class="social-link"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>هل لديك مشروع أو استفسار؟ أحب أن أسمع منك!</h3>
+                    
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">الاسم *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">البريد الإلكتروني *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">رسالتك *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            إرسال الرسالة
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="#home">الرئيسية</a>
+                    <a href="#about">نبذة عني</a>
+                    <a href="#services">خدماتي</a>
+                    <a href="#portfolio">أعمالي</a>
+                    <a href="#skills">مهاراتي</a>
+                    <a href="#education">التعليم</a>
+                    <a href="#contact">تواصل معي</a>
+                </div>
+                
+                <div class="footer-copyright">
+                    <p>&copy; 2024 أحمد صلحاب. جميع الحقوق محفوظة.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Loading Spinner -->
+    <div id="loading-spinner" class="loading-spinner">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
